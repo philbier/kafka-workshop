@@ -12,3 +12,4 @@ cd kafka_2.12-2.6.0
 bin/kafka-server-start.sh config/server.properties
 ```
 
+## Start the Kafka cluster

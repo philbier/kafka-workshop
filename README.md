@@ -60,6 +60,34 @@ Enter a username and password to complete the installation.
 
 ![Linux Distributions in Microsoft Store](./img/ubuntu_shell.png)
 
+### Install Java
+Run the package manager to get the latest updates. In the Ubuntu shell window that opened above, run the following commands:
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
+> :information_source: Tip: Right-click pastes text into the terminal window.
+
+Kafka requires the Java runtime to be version 8 or higher. Check the Java version in your Linux installation:
+```bash
+java -version
+```
+
+Your output should resemble this:
+```bash
+openjdk version "1.8.0_265"
+OpenJDK Runtime Environment (build 1.8.0_265-8u265-b01-0ubuntu2~20.04-b01)
+OpenJDK 64-Bit Server VM (build 25.265-b01, mixed mode)
+```
+
+If Java isn’t installed (likely) or it’s not the right version, install it by using your distribution’s package manager. There are a lot of ways to install Java. On Ubuntu, this is one of the simplest:
+```bash
+sudo apt install openjdk-8-jdk -y
+```
+
+
+
+
 
 
 

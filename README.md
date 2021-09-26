@@ -85,12 +85,29 @@ If Java isn’t installed (likely) or it’s not the right version, install it b
 sudo apt install openjdk-8-jdk -y
 ```
 
+### Download Kafka
+You can install Kafka by using a package manager, or you can download the tarball and extract it to your local machine directly.
+Execute the following command to download Kafka 3.0:
+```bash
+wget https://dlcdn.apache.org/kafka/3.0.0/kafka_2.13-3.0.0.tgz
+```
 
+Run the following commands to untar the Kafka archive, and cd to the kafka directory:
+```bash
+tar -xzf kafka_2.13-3.0.0.tgz
+cd kafka_2.13-3.0.0
+```
 
-
-
-
-
-<TODO: Add link Screencast on YouTube>
-
-
+Run the `ls -al` command to list the contents of the kafka directory:
+```bash
+total 64
+drwxr-xr-x  7 jim jim  4096 Oct 14 12:27 ./
+drwxr-xr-x 25 jim jim  4096 Nov 20 12:52 ../
+-rw-r--r--  1 jim jim 29975 Jul 28 11:16 LICENSE
+-rw-r--r--  1 jim jim   337 Jul 28 11:16 NOTICE
+drwxr-xr-x  3 jim jim  4096 Jul 28 11:23 bin/
+drwxr-xr-x  2 jim jim  4096 Jul 28 11:23 config/
+drwxr-xr-x  2 jim jim  4096 Oct 14 12:26 libs/
+drwxr-xr-x  2 jim jim  4096 Oct 14 12:28 logs/
+drwxr-xr-x  2 jim jim  4096 Jul 28 11:23 site-docs/
+```

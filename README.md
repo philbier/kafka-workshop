@@ -38,7 +38,7 @@ Your output should resemble the following:
 ```powershell
 For information on key differences with WSL 2 please visit https://aka.ms/wsl2
 ```
-WSL 2 is ready to use. For more information on installing WSL 2, including troubleshooting, see Windows Subsystem for Linux Installation Guide for Windows 10.
+:congratulations: WSL 2 is ready to use. For more information on installing WSL 2, including troubleshooting, see Windows Subsystem for Linux Installation Guide for Windows 10.
 
 
 ### Install your preferred Linux distribution

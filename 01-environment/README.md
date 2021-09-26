@@ -85,15 +85,15 @@ sudo apt install openjdk-8-jdk -y
 
 ## Download Kafka
 You can install Kafka by using a package manager, or you can download the tarball and extract it to your local machine directly.
-Execute the following command to download Kafka 3.0:
+Execute the following command to download Kafka 2.6:
 ```bash
-wget https://dlcdn.apache.org/kafka/3.0.0/kafka_2.13-3.0.0.tgz
+wget https://archive.apache.org/dist/kafka/2.6.0/kafka_2.12-2.6.0.tgz
 ```
 
 Run the following commands to untar the Kafka archive, and cd to the kafka directory:
 ```bash
-tar -xzf kafka_2.13-3.0.0.tgz
-cd kafka_2.13-3.0.0
+tar -xzf kafka_2.12-2.6.0.tgz
+cd kafka_2.12-2.6.0
 ```
 
 Run the `ls -al` command to list the contents of the kafka directory:

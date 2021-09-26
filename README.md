@@ -2,19 +2,12 @@
 
 ## Set up environment
 ### Install WSL
-Install a Ubuntu Linux distribution via WSL (Windows Subsystem for Linux)
-```bash  
-wsl --install -d Ubuntu-20.04
-``` 
-
 #### Enable the Windows Subsystem for Linux
 Turn on the Windows Subsystem for Linux feature before installing a Linux distribution. Open PowerShell as an administrator, and run the following command:
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-
 This may take a minute or two. Your output should resemble the following:
-
 ```powershell
 Deployment Image Servicing and Management tool
 Version: 10.0.18362.1139
@@ -26,17 +19,14 @@ Enabling feature(s)
 The operation completed successfully.
 ```
 
-
-* Enable the Virtual Machine feature
+#### Enable the Virtual Machine feature
 WSL 2 requires the Virtual Machine Platform feature. In PowerShell, run the following command:
 ```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-* Get the Linux kernel update
-
-Download the Linux kernel update package, which is a regular Windows Installer (.msi) file.
-https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+#### Get the Linux kernel update
+[Download the Linux kernel update package]: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi which is a regular Windows Installer (.msi) file.
 Double-click the .msi file to install the WSL 2 update. If you’re prompted for elevated permissions, select Yes to approve the installation.
 
 

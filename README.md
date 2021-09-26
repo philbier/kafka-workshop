@@ -2,14 +2,12 @@
 
 ## Set up environment
 ### Install WSL
-
-1. Install a Ubuntu Linux distribution via WSL (Windows Subsystem for Linux)
+Install a Ubuntu Linux distribution via WSL (Windows Subsystem for Linux)
 ```bash  
 wsl --install -d Ubuntu-20.04
 ``` 
 
-* Enable the Windows Subsystem for Linux
-
+#### Enable the Windows Subsystem for Linux
 Turn on the Windows Subsystem for Linux feature before installing a Linux distribution. Open PowerShell as an administrator, and run the following command:
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart

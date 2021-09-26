@@ -26,7 +26,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ```
 
 #### Get the Linux kernel update
-[Download the Linux kernel update package]: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi which is a regular Windows Installer (.msi) file.
+[Download the Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi), which is a regular Windows Installer (.msi) file.
 Double-click the .msi file to install the WSL 2 update. If you’re prompted for elevated permissions, select Yes to approve the installation.
 
 

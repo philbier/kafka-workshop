@@ -1,11 +1,8 @@
 # Run Apache Kafka
 ## Start the Kafka cluster
-Change into the Kafka directory depending on your installation/version:
+Change into the Kafka directory depending on your installation/version and start ZooKeeper:
 ```bash
 cd kafka_2.12-2.6.0
-```
-Run the following command to start ZooKeeper:
-```bash
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 There will be a lot of output, and ZooKeeper will be ready in a short time, typically around a second or two.

@@ -19,17 +19,16 @@ If you arrange the windows to be side by side, your output should resemble the f
 ## Produce and consume some messages
 Open another terminal session and run the ``kafka-topics`` command to create a Kafka topic named **quickstart-events**:
 ```bash
-cd kafka_2.13-2.6.0
+cd kafka_2.12-2.6.0
 bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 ```
-
-Open two more terminals, in on terminal run the Producer and in the other run the Consunmer of the topic named **quickstart-events**:  
+Run the Producer for **quickstart-events**  in the current terminal...:  
 ```bash
-cd kafka_2.13-2.6.0
-bin/kafka-console-producer.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 ```
+...and open a new terminal session to run the consumer.
 ```bash
-cd kafka_2.13-2.6.0
+cd kafka_2.12-2.6.0
 bin/kafka-console-consumer.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 ```
 

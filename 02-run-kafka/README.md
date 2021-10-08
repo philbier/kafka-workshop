@@ -14,7 +14,7 @@ bin/kafka-server-start.sh config/server.properties
 ```
 
 If you arrange the windows to be side by side, your output should resemble the following screenshot:
-![Linux Bash with Zookeeper and Kafka](./img/kafka_start.png)
+![Linux Bash with Zookeeper and Kafka](./img/start_kafka.png)
 
 ## Produce and consume some messages
 Open another terminal session and run the ``kafka-topics`` command to create a Kafka topic named **quickstart-events**:
